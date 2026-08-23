@@ -192,3 +192,14 @@ Sun Aug 23 05:33:29 PM UTC 2026:
  tests:  10|2
 total_score: 40/60
 dba471a
+Sun Aug 23 05:59:31 PM UTC 2026: 
+ list.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:133:18: error: ‘tail’ undeclared (first use in this function)
+  133 |             list-tail=nuevoNodo;
+      |                  ^~~~
+list.c:133:18: note: each undeclared identifier is reported only once for each function it appears in
+60005c5
