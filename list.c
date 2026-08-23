@@ -66,7 +66,7 @@ void * nextList(List * list) {
                 return dato;
             }else return NULL;
         }else return NULL;
-    } else return NULL:
+    } else return NULL;
 }
 
 // 3. Programe las funciones void * lastList(List * list) y void * prevList(List * list).
