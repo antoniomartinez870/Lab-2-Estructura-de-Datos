@@ -105,3 +105,19 @@ list.c:102:6: error: ‘pushBack’ defined but not used [-Werror=unused-functio
       |      ^~~~~~~~
 cc1: all warnings being treated as errors
 221c463
+Sun Aug 23 03:23:19 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:81:20: error: ‘dat’ undeclared (first use in this function); did you mean ‘dato’?
+   81 |             return dat;
+      |                    ^~~
+      |                    dato
+list.c:81:20: note: each undeclared identifier is reported only once for each function it appears in
+list.c:80:19: error: unused variable ‘dato’ [-Werror=unused-variable]
+   80 |             void *dato = list->current->data;
+      |                   ^~~~
+cc1: all warnings being treated as errors
+062859a
