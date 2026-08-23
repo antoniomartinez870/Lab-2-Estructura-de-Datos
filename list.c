@@ -49,7 +49,7 @@ List * createList() {
 void * firstList(List * list) {
     if(list!=NULL){
         if(list->head!=NULL){
-            void dato = list->head;
+            void *dato = list->head;
             list-> current = list->head;
             return dato;
         }else return NULL;
