@@ -46,3 +46,13 @@ Sun Aug 23 02:49:30 AM UTC 2026:
  tests:  1|5
 total_score: 10/60
 4bad33d
+Sun Aug 23 02:57:45 AM UTC 2026: 
+ list.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:69:23: error: expected ‘;’ before ‘:’ token
+   69 |     } else return NULL:
+      |                       ^
+d78ad7d
