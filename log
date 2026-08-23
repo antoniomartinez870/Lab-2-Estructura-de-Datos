@@ -159,3 +159,18 @@ list.c:113:10: error: ‘head’ undeclared (first use in this function)
   113 |     list-head=nuevoNodo;
       |          ^~~~
 cdbeaa5
+Sun Aug 23 05:32:36 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:110:26: error: ‘nuevonodo’ undeclared (first use in this function); did you mean ‘nuevoNodo’?
+  110 |         list->head->prev=nuevonodo;
+      |                          ^~~~~~~~~
+      |                          nuevoNodo
+list.c:110:26: note: each undeclared identifier is reported only once for each function it appears in
+list.c:111:19: error: expected expression before ‘->’ token
+  111 |         nuevoNodo=->next=list->head;
+      |                   ^~
+1d31c1c
