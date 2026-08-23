@@ -24,3 +24,19 @@ Fri Aug 21 11:51:08 PM UTC 2026:
  tests:  1|5
 total_score: 10/60
 46b856e
+Sun Aug 23 02:49:08 AM UTC 2026: 
+ list.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:52:18: error: variable or field ‘dato’ declared void
+   52 |             void dato = list->head;
+      |                  ^~~~
+list.c:52:25: error: initialization of ‘int’ from ‘Node *’ makes integer from pointer without a cast [-Wint-conversion]
+   52 |             void dato = list->head;
+      |                         ^~~~
+list.c:54:20: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Wint-conversion]
+   54 |             return dato;
+      |                    ^~~~
+a2875fb
