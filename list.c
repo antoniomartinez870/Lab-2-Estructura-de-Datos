@@ -78,7 +78,7 @@ void * lastList(List * list) {
     while(list->current !=NULL){
         if(list->current->next==NULL){
             void *dato = list->current->data;
-            return dat;
+            return dato;
         }
         list->current = list->current->next;
     }return NULL;
